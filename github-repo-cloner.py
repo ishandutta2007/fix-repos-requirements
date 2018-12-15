@@ -87,8 +87,13 @@ def commit_push(url):
 		f.write("echo '===" + url.split('/')[-1] + " done==='\n")
 		f.write("cd ../..\n")
 
+def delete_shell_scripts():
+	for f in os.listdir('.'):
+		if os.path.splitext(f)[1] == '.sh':
+			os.unlink(f)
+
 def main():
-	subproces.call(["rm", "-rf", "*.sh"])
+	delete_shell_scripts()
 	with open('clone_url-list.csv','r') as fp:
 		url = fp.readline().strip()
 		cnt = 1
