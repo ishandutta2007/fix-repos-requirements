@@ -105,7 +105,7 @@ def main():
 				revert(url)
 				fix(url)
 				commit_push(url)
-				delete_clones(url)
+			delete_clones(url)
 			cnt += 1
 			url = fp.readline().strip()
 
