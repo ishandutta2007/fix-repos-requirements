@@ -1,6 +1,6 @@
 # reach-github-issuers
 
-This is a repo which bulk update README.md of all of my repos with a specific content.
+This is a repo which bulk update requirements.txt of all of my python repos with packages only found in code.
 
 ### To run:
 
